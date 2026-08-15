@@ -1,0 +1,49 @@
+{
+  "numeric_cols": [
+    "age",
+    "resting_bp_systolic",
+    "resting_bp_diastolic",
+    "cholesterol_total",
+    "hdl",
+    "ldl",
+    "triglycerides",
+    "fasting_blood_sugar",
+    "hba1c",
+    "bmi",
+    "resting_heart_rate",
+    "max_heart_rate_achieved",
+    "exercise_induced_angina",
+    "st_depression",
+    "family_history",
+    "alcohol_units_per_week",
+    "exercise_minutes_per_week",
+    "sleep_hours",
+    "stress_score",
+    "wearable_owner",
+    "daily_steps",
+    "diet_quality_score"
+  ],
+  "categorical_cols": [
+    "sex",
+    "chest_pain_type",
+    "smoker_status"
+  ],
+  "categories": {
+    "sex": [
+      "Female",
+      "Male"
+    ],
+    "chest_pain_type": [
+      "Asymptomatic",
+      "Atypical Angina",
+      "Non-Anginal Pain",
+      "Typical Angina"
+    ],
+    "smoker_status": [
+      "Current",
+      "Former",
+      "Never"
+    ]
+  },
+  "target": "has_heart_disease"
+}
