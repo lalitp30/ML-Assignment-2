@@ -34,7 +34,7 @@ best-performing model is served through an interactive Streamlit web application
 
 ## c. GitHub Repository Link
 
-`<PASTE_YOUR_GITHUB_REPO_LINK_HERE>`
+`https://github.com/lalitp30/ML-Assignment-2`
 
 ## d. Models Used
 
@@ -119,7 +119,6 @@ from the sidebar to see live predictions, metrics, and confusion matrices for an
 
 ## Deployment
 
-Deployed on **Streamlit Community Cloud**: `<PASTE_YOUR_LIVE_STREAMLIT_APP_LINK_HERE>`
+Deployed on **Streamlit Community Cloud**: `https://ml-assignment-2-lalitpetkule.streamlit.app/`
 
 ---
-*BITS Pilani WILP — M.Tech (AIML/DSE) — Machine Learning — Assignment 2*
