@@ -76,7 +76,7 @@ project-folder/
 │-- test_data.csv                # Held-out test split (used for demo/upload)
 │-- model/
 │   │-- train_models.py          # Training script (script version)
-│   │-- train_models.ipynb       # Training notebook (run this in Jupyter)
+│   │-- ML Assignment 2 - 2025da04315.ipynb       # Training notebook (run this in Jupyter)
 │   │-- logistic_regression.pkl  # Fitted pipeline (preprocessing + model)
 │   │-- decision_tree.pkl
 │   │-- knn.pkl
@@ -87,28 +87,6 @@ project-folder/
 │   └-- confusion_matrices.png   # Confusion matrix grid from training
 ```
 
-## How to Run Locally
-
-```bash
-# 1. Clone the repo
-git clone <PASTE_YOUR_GITHUB_REPO_LINK_HERE>
-cd project-folder
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. (Optional) Re-train models — .pkl files are already included
-cd model
-python train_models.py     # or open/run train_models.ipynb in Jupyter
-cd ..
-
-# 4. Launch the Streamlit app
-streamlit run app.py
-```
-
-The app will open at `http://localhost:8501`. Upload `test_data.csv` (included in this repo)
-from the sidebar to see live predictions, metrics, and confusion matrices for any of the
-5 models, or choose "Compare all models" to see them side by side.
 
 ## Streamlit App Features
 
