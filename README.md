@@ -61,7 +61,7 @@ Five classifiers were trained on identical preprocessed data (train/test split, 
 | Random Forest (Ensemble) | Solid, well-balanced performance (2nd-best AUC and MCC) with less overfitting risk than a single Decision Tree, thanks to averaging over 300 trees. It underperforms Logistic Regression here, likely because the true decision boundary is close to linear, giving the extra model complexity little advantage. |
 | **Overall Winner for your dataset?** | **Logistic Regression** — it achieves the best Accuracy (0.898), AUC (0.950), F1 (0.823), and MCC (0.753) of all five models, making it the most reliable classifier for this dataset. |
 
-> Re-run `model/train_models.ipynb` if you change the dataset, split, or hyperparameters — this table will need to be regenerated and these observations revisited.
+> Re-run `model/ML Assignment 2 - 2025da04315.ipynb` if you change the dataset, split, or hyperparameters — this table will need to be regenerated and these observations revisited.
 
 ---
 
