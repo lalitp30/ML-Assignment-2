@@ -15,7 +15,7 @@ best-performing model is served through an interactive Streamlit web application
 
 ## b. Dataset Description
 
-- **Source:** `heart_disease_risk_2026.csv` (custom heart disease risk dataset)
+- **Source:** `heart_disease_risk_2026.csv` (available on Kaggle)
 - **Instances:** 9,000 patient records
 - **Features:** 25 predictive features (after dropping the `patient_id` identifier)
 - **Target variable:** `has_heart_disease` (0 = No disease, 1 = Disease) — approx. 30% positive class
