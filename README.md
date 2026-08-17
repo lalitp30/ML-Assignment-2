@@ -29,7 +29,7 @@ best-performing model is served through an interactive Streamlit web application
     Atypical Angina / Typical Angina), smoker_status (Never / Former / Current)
 - **Missing values:** None
 - **Preprocessing:** Boolean columns cast to 0/1; numeric features standardized with
-  `StandardScaler`; categorical features one-hot encoded (`drop='first'`); 80/20
+  `StandardScaler`; categorical features one-hot encoded; 80/20
   stratified train-test split (random_state = 42).
 
 ## c. GitHub Repository Link
@@ -55,10 +55,10 @@ Five classifiers were trained on identical preprocessed data (train/test split, 
 | ML Model Name | Observation about model performance |
 |---|---|
 | Logistic Regression | Best overall performer across almost every metric (highest Accuracy, AUC, F1, and MCC). The relationship between the clinical risk factors and heart disease in this dataset appears largely linear/additive, which favors a linear model. It also generalizes well and is the most interpretable of the five. |
-| Decision Tree | Weakest performer overall. A single tree (depth capped at 6 to control overfitting) captures some interactions but loses accuracy compared to ensembling; it is also the most sensitive to small changes in the training data (high variance). |
-| kNN | Highest **precision** (0.897) but by far the lowest **recall** (0.609) — it is conservative and only predicts "disease" when neighbors are strongly in agreement, so it misses many true positive cases. Performance is also sensitive to feature scaling (handled here via StandardScaler) and the choice of k. |
-| Naive Bayes | Strong **recall** (0.817), the second-highest after Logistic Regression, meaning it catches the most actual disease cases, at some cost to precision. Its independence assumption between features is clearly violated here (e.g., cholesterol subtypes are correlated), yet it still performs respectably. |
-| Random Forest (Ensemble) | Solid, well-balanced performance (2nd-best AUC and MCC) with less overfitting risk than a single Decision Tree, thanks to averaging over 300 trees. It underperforms Logistic Regression here, likely because the true decision boundary is close to linear, giving the extra model complexity little advantage. |
+| Decision Tree | Weakest performer overall. A single tree captures some interactions but loses accuracy compared to ensembling; it is also the most sensitive to small changes in the training data. |
+| kNN | Highest **precision** (0.897) but by far the lowest **recall** (0.609) — it is conservative and only predicts "disease" when neighbors are strongly in agreement, so it misses many true positive cases. Performance is also sensitive to feature scaling and the choice of k. |
+| Naive Bayes | Strong **recall** (0.817), the second-highest after Logistic Regression, meaning it catches the most actual disease cases, at some cost to precision. Its independence assumption between features is clearly violated here, yet it still performs respectably. |
+| Random Forest (Ensemble) | Solid, well-balanced performance with less overfitting risk than a single Decision Tree, thanks to averaging over 300 trees. It underperforms Logistic Regression here, likely because the true decision boundary is close to linear, giving the extra model complexity little advantage. |
 | **Overall Winner for your dataset?** | **Logistic Regression** — it achieves the best Accuracy (0.898), AUC (0.950), F1 (0.823), and MCC (0.753) of all five models, making it the most reliable classifier for this dataset. |
 
 
